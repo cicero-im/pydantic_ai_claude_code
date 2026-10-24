@@ -1325,7 +1325,7 @@ class TestCategoryFiltering:
     def test_empty_category_returns_empty_list(self):
         """Test that nonexistent category returns empty list."""
         # Using an invalid category should return empty list
-        presets = get_presets_by_category("nonexistent")  # type: ignore
+        presets = get_presets_by_category("nonexistent")
         # This will still work but filter out everything
         assert isinstance(presets, list)
 
